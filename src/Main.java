@@ -6,14 +6,16 @@ public class Main {
     public static void main(String[] args) {
         Services services = new Services();
         Scanner scanner = new Scanner(System.in);
+        boolean running = true;
 
-        while (true) {
+        while (running) {
             System.out.println("Welcome to The Car Rental System");
             System.out.println("---".repeat(20));
             System.out.println("1. Client Registration");
             System.out.println("2. Vehicle Registration");
             System.out.println("3. Rent Car");
             System.out.println("4. Retrieve Car");
+            System.out.println("5. Exit");
             System.out.println("Choose a number between1-4: ");
             String choice = scanner.nextLine().trim();
 
@@ -71,7 +73,11 @@ public class Main {
                     String rentalId = scanner.nextLine();
                     services.retrieveVehicle(rentalId);
                     break;
-
+                case "5":
+                    System.out.println("Thank you for using Our Application");
+                    System.out.println("!GoodBye!");
+                    running = false;
+                    break;
                 default:
                     System.out.println("Invalid option.");
                     break;
