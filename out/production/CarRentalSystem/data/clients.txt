@@ -1,0 +1,2 @@
+CLIENT,822568,Elekes,Alfred
+CLIENT,883746,Molnar,Anett
