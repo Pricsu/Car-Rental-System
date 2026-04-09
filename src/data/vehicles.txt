@@ -1,1 +1,2 @@
-CAR,688776,audi,a5,true,20.00,4,4
+CAR,136346,audi,a7,true,40.00,6,5
+CAR,605053,bmw,seria3,false,30.00,4,4
